@@ -9,18 +9,18 @@ export const Todo = () => {
         <button>追加</button>
       </div>
       <div className="incomplete-area">
-        <p>未完了のTODO</p>
+        <p className="title">未完了のTODO</p>
         <ul>
           <li>
             <div className="list-row">
-              <p>TODOです</p>
+              <p className="todo-item">TODOです</p>
               <button>完了</button>
               <button>削除</button>
             </div>
           </li>
           <li>
             <div className="list-row">
-              <p>TODOです</p>
+              <p className="todo-item">TODOです</p>
               <button>完了</button>
               <button>削除</button>              
             </div>
@@ -29,17 +29,17 @@ export const Todo = () => {
         </ul>
       </div>
       <div className="complete-area">
-        <p>完了のTODO</p>
+        <p className="title">完了のTODO</p>
         <ul>
           <li>
             <div className="list-row">
-              <p>TODOでした</p>
+              <p className="todo-item">TODOでした</p>
               <button>戻す</button>
             </div>
           </li>
           <li>
             <div className="list-row">
-              <p>TODOでした</p>
+              <p className="todo-item">TODOでした</p>
               <button>戻す</button>              
             </div>
           </li>
