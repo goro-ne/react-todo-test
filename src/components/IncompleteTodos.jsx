@@ -1,8 +1,24 @@
+const styleIncompleteArea = {
+  // incomplete-area
+  border: "2px solid #aacfd0",
+  width: "400px",
+  minHeight: "200px",
+  padding: "8px",
+  margin: "8px",
+  borderRadius: "8px"
+}
+const styleTitle = {
+  // title
+  textAlign: "center",
+  marginTop: 0,
+  fontWeight: "bold"
+}
+
 export const IncompleteTodos = (props) => {
     const { todos, onClickComplete, onClickDelete } = props;
     return (
-        <div className="incomplete-area">
-        <p className="title">未完了のTODO</p>
+        <div style={styleIncompleteArea}>
+        <p style={styleTitle}>未完了のTODO</p>
         <ul>
           {todos.map( (todo, index) => (
               <li key={todo}>

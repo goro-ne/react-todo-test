@@ -22,25 +22,25 @@ body {
     cursor: pointer;
   }
   
-  .input-area {
+  /* .input-area {
     background-color: #c6e5d9;
     width: 400px;
     height: 30px;
     padding: 8px;
     margin: 8px;
     border-radius: 8px;
-  }
+  } */
   
-  .incomplete-area {
+  /* .incomplete-area {
     border: 2px solid #aacfd0;
     width: 400px;
     min-height: 200px;
     padding: 8px;
     margin: 8px;
     border-radius: 8px;
-  }
+  } */
   
-  .complete-area {
+  /* .complete-area {
     border: 2px solid #aacfd0;
     width: 400px;
     min-height: 200px;
@@ -48,13 +48,13 @@ body {
     margin: 8px;
     border-radius: 8px;
     background-color: #c9dede;
-  }
+  } */
   
-  .title {
+  /* .title {
     text-align: center;
     margin-top: 0;
     font-weight: bold;
-  }
+  } */
   
   .list-row {
     display: flex;
