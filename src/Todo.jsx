@@ -23,6 +23,14 @@ export const Todo = () => {
     newTodos.splice(index, 1);
     setIncompleteTodos(newTodos);
   };
+  // 完了ボタン
+  const onClickComplete = (index) => {
+    const newCompleteTodos = [...completeTodos, incompleteTodos[index]];
+    setCompleteTodos(newCompleteTodos);
+    const newTodos = [...incompleteTodos];
+    newTodos.splice(index, 1);
+    setIncompleteTodos(newTodos);
+  };
   return (
     <>
       <div className="input-area">
@@ -36,7 +44,7 @@ export const Todo = () => {
               <li key={todo}>
                 <div className="list-row">
                   <p className="todo-item">{todo}</p>
-                  <button>完了</button>
+                  <button onClickCapture={() => onClickComplete(index)}>完了</button>
                   <button　onClick={() => onClickDelete(index)}>削除</button>
                 </div>
               </li>
